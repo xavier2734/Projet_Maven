@@ -48,5 +48,21 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+    <plugins>
+        <plugin>
+            <groupId>fr.diginamic</groupId>
+            <artifactId>Projet_Maven</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+                <!-- Où déposer le JAR généré par la phase package -->
+                <outputDirectory>${user.home}/Desktop</outputDirectory>
+                <archive>
+                    <manifest>
+                        <mainClass>HelloFrame</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
 
 </project>
